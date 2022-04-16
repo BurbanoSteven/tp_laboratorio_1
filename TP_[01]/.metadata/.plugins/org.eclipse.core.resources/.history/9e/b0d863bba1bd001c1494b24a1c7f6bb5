@@ -1,0 +1,63 @@
+/*
+ * calculosUTN.c
+ *
+ *  Created on: 15 abr 2022
+ *      Author: 54112
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include "calculosUTN.h"
+
+float UTN_descuentoAumento(float valor , float porcentaje){
+
+
+	float resultado;
+
+
+
+	resultado = valor + ((valor * porcentaje)/100);
+
+	return resultado;
+
+}
+
+float UTN_conversionBitcoin(float pesosArgentinos){
+
+	float resultado;
+
+	resultado = pesosArgentinos / 460695.55;
+
+	return resultado;
+}
+
+float UTN_precioPorKm (float kilometros, float precioVuelo){
+	float resultado;
+
+	resultado = precioVuelo/ kilometros;
+
+	return resultado;
+
+
+}
+
+float UTN_diferencia (float valor1, float valor2){
+
+	float resultado;
+
+	resultado = valor1 - valor2;
+
+	if (resultado >= 0){
+
+		resultado = valor1 - valor2;
+
+	}
+
+	else {
+
+		resultado = valor2 - valor1;
+
+	}
+
+	return resultado;
+
+}
